@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Expose application port
-EXPOSE 8000:8000
+EXPOSE 80:80
 
 CMD ["node", "bin/www"]
 
