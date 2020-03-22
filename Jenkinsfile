@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:dubnium-alpine'
-            args '-d -p 80:80'
+            args '-d -p 8000:80'
         }
     }
     environment {
