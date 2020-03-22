@@ -5,11 +5,11 @@ FROM node:dubnium-alpine AS base
 WORKDIR /user/src/app/release
 
 # Copy project specification and dependencies lock files
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY . ./
 
 # Expose application port
 EXPOSE 80:80

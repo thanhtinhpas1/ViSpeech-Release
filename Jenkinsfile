@@ -1,22 +1,17 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:dubnium-alpine'
-            args '-d -p 8000:80'
-        }
-    }
+    agent any
     environment {
         CI = 'true'
     }
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+                sh 'docker build -t release .'
             }
         }
         stage('Delivery') {
             steps {
-                sh 'npm run start'
+                sh 'docker run -d --restart=always -p 8000:80 release'
             }
         }
     }
