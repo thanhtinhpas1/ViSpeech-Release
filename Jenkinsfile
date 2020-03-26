@@ -12,7 +12,7 @@ pipeline {
         stage('Delivery') {
             steps {
                 sh 'docker rm -f release'
-                sh 'docker run --name=release -d --restart=always -p 8000:8000 release'
+                sh 'docker run --name=release -d --restart=always -p 80:80 release'
             }
         }
     }
