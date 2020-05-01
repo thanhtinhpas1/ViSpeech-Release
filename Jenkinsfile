@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Delivery') {
             steps {
-                sh 'docker rm -f release'
+                sh 'docker rm -f release || true'
                 sh 'docker run --name=release -d --restart=always -p 80:80 release'
             }
         }
