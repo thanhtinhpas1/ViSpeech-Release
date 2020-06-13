@@ -4,28 +4,28 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  }
-  
-  a {
+}
+
+a {
     color: #00B7FF;
-  }
-  b {
-    color: #ff3333;
-  }
-  
-  h2{
-      margin-top:20px;
-      margin-left:0px;
-      margin-right:0px;
-      margin-bottom:0px;
-  }
-  
-  p{
-      margin:0px;
-  }
-  
-  li{
-      padding-bottom:12px;
-      font-size: 18px;
-  }
-  
+}
+
+small {
+    color: dimgrey;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+    margin: 0px;
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 10px;
+}
