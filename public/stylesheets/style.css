@@ -7,7 +7,8 @@ body {
 }
 
 a {
-    color: #00B7FF;
+    color: #62e3fa;
+    text-decoration: underline !important;
 }
 
 small {
@@ -23,9 +24,9 @@ h2 {
 
 p {
     margin: 0px;
-    font-weight: bold;
+    font-family: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
